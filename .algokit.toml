@@ -2,8 +2,15 @@
 min_version = "v1.12.1"
 
 [project]
-type = 'workspace'
-projects_root_path = 'projects'
+type = "workspace"
+projects_root_path = "projects"
+
+[scripts]
+# Bootstrap backend dependencies (Python)
+bootstrap = "algokit project bootstrap poetry"
+
+# Deploy smart contracts (change path if your deploy script is in another folder)
+deploy = "cd backend && poetry run python deploy.py"
 
 [generate.devcontainer]
 description = "Generate a default 'devcontainer.json' configuration that pre-installs algokit and launches Algorand sandbox as part of codespace container provisioning."
