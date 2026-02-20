@@ -173,9 +173,11 @@ node_modules
 !/frontend
 !/backend
 !/algorand
+!/projects
+!/panchayat
 !.gitignore
+!.algokit.toml
 !README.md
 !*.md
 
 DEPLOYMENT_CHECKLIST.md
-SETUP_GUIDE.md
